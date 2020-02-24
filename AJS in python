@@ -1,0 +1,10 @@
+a=input()
+sum=0
+b=a[:2]
+for i in b:
+    sum=sum+int(i)
+if str(sum) in a:
+    print("AJS")
+else:
+    print("Not AJS")
+    
