@@ -1,0 +1,13 @@
+a=input().split()
+l=[]
+for i in a:
+    l.append(len(i))
+b=min(l)
+c=max(l)
+d=l.index(b)
+e=l.index(c)
+print(a[d])
+print(a[e])
+
+
+
