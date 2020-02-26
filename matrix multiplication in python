@@ -1,0 +1,19 @@
+r=2
+c=2
+b=[[0 for i in range(r)] for j in range(c)]
+for i in range(0,r):
+    for j in range(0,c):
+        b[i][j]=int(input())
+x=[[0 for i in range(r)] for j in range(c)]
+for i in range(0,r):
+    for j in range(0,c):
+        x[i][j]=int(input())
+d=[[0 for i in range(r)] for j in range(c)]
+for i in range(0,r):
+    for j in range(0,c):
+        for k in range(0,r):
+            d[i][j]+=b[i][k]*x[k][j]
+for i in range(0,r):
+    for j in range(0,c):
+        print(d[i][j],end=' ')
+    print("")
