@@ -1,0 +1,7 @@
+a=int(input())
+b=int(input())
+for i in range(a,b):
+    c=str(i)[::-1]
+    if str(i)==c:
+        print(c)
+        
