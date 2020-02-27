@@ -1,0 +1,13 @@
+a=int(input())
+b=int(input())
+
+s=0
+for i in range(a,b):
+    d=len(str(i))
+    for j in str(i):
+        e=int(j)**d
+        s=s+e
+        if(s==i):
+            print(i)
+    s=0
+
